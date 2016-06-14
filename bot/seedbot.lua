@@ -232,7 +232,7 @@ function create_config( )
 	"whitelist",
 	"msg_checks",
 	"infoen",
-	"infofa",
+
 
     },
     sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
