@@ -565,10 +565,7 @@ end
 		end
 	end
   local settings = data[tostring(target)]['settings']
- local url , res = http.request('http://api.gpmod.ir/time/')
-if res ~= 200 then return "No connection" end
-local jdat = json:decode(url)
- local text = "🇬🇧 Settings Group For "..msg.to.print_name.." :\n\n🔸🔹 Lock links : "..settings.lock_link.."\n🔸🔹 Lock flood: "..settings.flood.."\n🔸🔹 Flood sensitivity : "..NUM_MSG_MAX.."\n🔸🔹Lock spam: "..settings.lock_spam.."\n🔸🔹 Lock Arabic: "..settings.lock_arabic.."\n🔸🔹 Lock Member: "..settings.lock_member.."\n🔸🔹 Lock RTL: "..settings.lock_rtl.."\n🔸🔹 Lock Tgservice : "..settings.lock_tgservice.."\n🔸🔹 Lock sticker: "..settings.lock_sticker.."\n🔸🔹 Public: "..settings.public.."\n🔸🔹 Strict settings: "..settings.strict.."\n---------------------------------\n⭕️ Group Id: |"..msg.to.id.."|\n⭕️ Your Id: |"..msg.from.id"|\n---------------------------------\n⏱ Time For Request: "..jdat.ENdate
+local text = "🇬🇧 Settings Group For "..msg.to.print_name.." :\n\n🔸🔹 Lock links : "..settings.lock_link.."\n🔸🔹 Lock flood: "..settings.flood.."\n🔸🔹 Flood sensitivity : "..NUM_MSG_MAX.."\n🔸🔹Lock spam: "..settings.lock_spam.."\n🔸🔹 Lock Arabic: "..settings.lock_arabic.."\n🔸🔹 Lock Member: "..settings.lock_member.."\n🔸🔹 Lock RTL: "..settings.lock_rtl.."\n🔸🔹 Lock Tgservice : "..settings.lock_tgservice.."\n🔸🔹 Lock sticker: "..settings.lock_sticker.."\n🔸🔹 Public: "..settings.public.."\n🔸🔹 Strict settings: "..settings.strict.."\n---------------------------------\n⭕️ Group Id: |"..msg.to.id.."|\n⭕️ Your Id: |"..msg.from.id"|"
   return text
 end
 
